@@ -35,7 +35,7 @@ server.register(plugins, (err) => {
         method: 'POST',
         path: '/',
         handler: (req,res)=>{
-            MongoClient.connect(process.env.MLAB_URI, function(err, db) {
+            MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
                 db.collection('results').insert(req.payload);
                 res()
             });
