@@ -9,7 +9,7 @@
 <script>
 function myFunction() {
     var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST", "http://localhost:3000");
+    xmlhttp.open("POST", "/");
     xmlhttp.setRequestHeader("Content-Type", "application/json");
     xmlhttp.send(JSON.stringify({name:"John Rambo", time:"2pm"}));
 }
