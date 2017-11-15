@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<script>
+function myFunction() {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("POST", "http://localhost:3000");
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+    xmlhttp.send(JSON.stringify({name:"John Rambo", time:"2pm"}));
+}
+</script>
+
+</body>
+</html>
