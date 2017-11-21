@@ -36,6 +36,7 @@ server.register(plugins, (err) => {
         path: '/',
         handler: (req,res)=>{
             MongoClient.connect(process.env.MONGODB_URI, function(err, db) {
+                req.payload.app = 'no-slide'
                 db.collection('results').insert(req.payload);
                 res()
             });
