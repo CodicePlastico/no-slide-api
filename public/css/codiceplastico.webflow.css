@@ -24,7 +24,7 @@ h1 {
 
 p {
   margin-bottom: 10px;
-  font-family: Comic, sans-serif;
+  font-family: 'comic_strip_mnregular';
   color: #fff;
   font-size: 24px;
   text-align: center;
@@ -60,7 +60,7 @@ p {
 }
 
 .span {
-  font-family: Comic, sans-serif;
+  font-family: 'comic_strip_mnregular';
   text-decoration: underline;
 }
 
@@ -96,7 +96,8 @@ p {
 .paragraph {
   margin-right: 4%;
   margin-left: 4%;
-  font-family: Comic, sans-serif;
+  font-family: 'comic_strip_mnregular';
+  text-transform: uppercase;
   font-size: 34px;
   line-height: 35px;
 }
@@ -142,15 +143,28 @@ html.w-mod-js *[data-ix="fade"] {
   }
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Comic';
   src: url('../fonts/Comic.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-}
+}*/
 @font-face {
   font-family: 'Calibre';
   src: url('../fonts/Calibre-Black.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'comic_strip_mnregular';
+  src: url('../fonts/comic-webfont.eot');
+  src: url('../fonts/comic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/comic-webfont.woff2') format('woff2'),
+       url('../fonts/comic-webfont.woff') format('woff'),
+       url('../fonts/comic-webfont.ttf') format('truetype'),
+       url('../fonts/comic-webfont.svg#comic_strip_mnregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
